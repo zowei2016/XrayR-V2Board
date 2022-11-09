@@ -7,7 +7,7 @@ Nodes:
   -
     PanelType: "V2board" # Panel type: SSpanel, V2board
     ApiConfig:
-      ApiHost: "http://164.88.73.7" # 修改这里
+      ApiHost: "http://164.88.255.16" # 修改这里
       ApiKey: "zowei2022efrwetertr" # 修改这里
       NodeID: 1
       NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan
