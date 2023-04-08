@@ -2,7 +2,7 @@
  * @Author: Vincent Young
  * @Date: 2022-07-26 02:19:56
  * @LastEditors: Vincent Young
- * @LastEditTime: 2022-10-07 05:55:53
+ * @LastEditTime: 2023-01-26 04:20:43
  * @FilePath: /XrayR-V2Board/README.md
  * @Telegram: https://t.me/missuo
  * 
@@ -17,10 +17,16 @@ English | [简体中文](https://github.com/missuo/XrayR-V2Board/blob/main/READM
 2. Thanks to `XrayR-release` for the one-click script
 3. This script is based on `XrayR-release`.
 4. Only For `V2Board`.
-5. Only For `Shadowsocks` `V2Ray-TCP` `V2Ray-WebSocket`.
+5. Support for any protocol.
 6. This repository uses the latest version of `XrayR` by default
 
 ## Update
+### Nov 13, 2022
+- Support for `TLS`, such as `TCP-TLS`, `WebSocket-TLS`, `gRPC-TLS` and `Trojan-TLS`.
+- If you are using the TLS protocol, use the following command to request a certificate. (**Before applying, make sure that the domain name has resolved to an IP and that port 80 of the server is not occupied, and temporarily stop the `Nginx` service.**)
+```shell
+bash <(curl -Ls https://cdn.jsdelivr.net/gh/missuo/AutoApplyCert/apply.sh)
+```
 ### Oct 7, 2022
 - Switch to the latest official version.
 ### May 19, 2022
@@ -54,7 +60,7 @@ English | [简体中文](https://github.com/missuo/XrayR-V2Board/blob/main/READM
 ApiHost: "YOUR_PANEL_URL" # Modify here
 ApiKey: "YOUR_TOKEN" # Modify here
 ```
-2. Modify line 213 of the `install.sh` file to change the username `missuo` to your own GitHub username.
+2. Modify line 224 of the `install.sh` file to change the username `missuo` to your own GitHub username.
 ```
 wget https://cdn.jsdelivr.net/gh/missuo/XrayR-V2Board/config.yml -O /etc/XrayR/config.yml
 ```
@@ -72,3 +78,8 @@ bash <(curl -Ls https://cdn.jsdelivr.net/gh/missuo/XrayR-V2Board/install.sh)
 Since your repository may be public after you Fork this repository. Modifying the configuration file directly may expose your panel's key information. We recommend downloading `config.yml` and uploading it to your own server after modifying the information. And fill in the `install.sh` with your own config file download link. Finally, upload `install.sh` to your own server to generate your own one-click installation command.
 
 [![Star History Chart](https://api.star-history.com/svg?repos=missuo/XrayR-V2Board&type=Date)](https://star-history.com/#fanux/missuo/XrayR-V2Board)
+
+
+## Author
+
+**XrayR-V2Board** © [Vincent Young](https://github.com/missuo) & [Ming](https://github.com/Chenming00), Released under the [MIT](./LICENSE) License.<br>
