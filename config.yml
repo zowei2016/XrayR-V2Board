@@ -7,7 +7,7 @@ Nodes:
   -
     PanelType: "NewV2board" # Panel type: SSpanel, V2board
     ApiConfig:
-      ApiHost: "http://v2.ikantk.cf:8288" #修改这里
+      ApiHost: "http://vb.ikantk.cf:8288" #修改这里
       ApiKey: "zowei20230107date" #修改这里
       NodeID: 1
       NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
